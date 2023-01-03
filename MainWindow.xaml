@@ -1,0 +1,20 @@
+﻿<Window x:Class="bank_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bank_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,25,14">
+        <TextBox x:Name="tbStavka" HorizontalAlignment="Left" Margin="105,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="25"/>
+        <Label Content="Ставка, %" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbSumma" HorizontalAlignment="Left" Margin="105,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="25"/>
+        <Label Content="Сумма" HorizontalAlignment="Left" Margin="25,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbRashod" HorizontalAlignment="Left" Margin="105,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="25"/>
+        <Label Content="Расход" HorizontalAlignment="Left" Margin="25,125,0,0" VerticalAlignment="Top"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="25,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.126,-0.248" Height="25" Width="240" Click="cmRasschet"/>
+        <ListBox x:Name="lbRashod" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="320,25,10,116"/>
+
+    </Grid>
+</Window>
